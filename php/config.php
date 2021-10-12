@@ -1,5 +1,3 @@
-<!-- This code is commited on 10th of October  -->
-
 <?php
   $hostname = "localhost";
   $username = "root";

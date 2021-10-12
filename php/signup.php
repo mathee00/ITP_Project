@@ -26,8 +26,11 @@
                             $time = time();
                             $new_img_name = $time.$img_name;
                             if(move_uploaded_file($tmp_name,"images/".$new_img_name)){
+                                //Creating a random number based on the current time
                                 $ran_id = rand(time(), 100000000);
                                 $status = "Active now";
+
+                                //hashing the password using md5
                                 $encrypt_pass = md5($password);
                                 $insert_query = mysqli_query($conn, "INSERT INTO users (unique_id, fname, lname, email, password, img, status)
                                 VALUES ({$ran_id}, '{$fname}','{$lname}', '{$email}', '{$encrypt_pass}', '{$new_img_name}', '{$status}')");
