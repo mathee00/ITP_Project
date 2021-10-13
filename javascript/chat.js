@@ -1,12 +1,12 @@
-const form = 
+const form = document.querySelector(".typing-area"),
 incoming_id = form.querySelector(".incoming_id").value,
 inputField = form.querySelector(".input-field"),
 sendBtn = form.querySelector("button"),
 chatBox = document.querySelector(".chat-box");
 const editForm = document.querySelector(".edit-typing-area"),
 editInputField = form.querySelector(".edit-input-field"),
-editBtn = editForm.querySelector("editButton");
-
+// editBtn = editForm.querySelector("editButton");
+editBtn = form.querySelector("editButton");
 
 form.onsubmit = (e)=>{
     e.preventDefault();
