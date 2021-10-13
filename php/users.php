@@ -5,6 +5,8 @@
     $sql = "SELECT * FROM users WHERE NOT unique_id = {$outgoing_id} ORDER BY user_id DESC";
     $query = mysqli_query($conn, $sql);
     $output = "";
+
+    //showing the list
     if(mysqli_num_rows($query) == 0){
         $output .= "No users are available to chat";
     }elseif(mysqli_num_rows($query) > 0){

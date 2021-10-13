@@ -33,6 +33,7 @@ searchBar.onkeyup = ()=>{
   xhr.send("searchTerm=" + searchTerm);
 }
 
+//getting logged user list from time to time
 setInterval(() =>{
   let xhr = new XMLHttpRequest();
   xhr.open("GET", "php/users.php", true);

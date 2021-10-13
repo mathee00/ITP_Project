@@ -61,14 +61,15 @@
         let formData = new FormData();
         formData.append("message_id",selectedMsgId);
         formData.append("message",myMessage);
-        // Display the keys for testing purpose 
-        for (var key of formData.keys()) {
-          console.log(key);
-        }
-        // Display the values for testing purpose
-        for (var value of formData.values()) {
-          console.log(value);
-        }
+        
+        // // Display the keys for testing purpose 
+        // for (var key of formData.keys()) {
+        //   console.log(key);
+        // }
+        // // Display the values for testing purpose
+        // for (var value of formData.values()) {
+        //   console.log(value);
+        // }
 
         xhr.send(formData);
 
